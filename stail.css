@@ -1,0 +1,75 @@
+body{
+background:blue;
+margin:0px; 
+
+}
+
+
+.header {
+background-image: url(wemage/ocean_placeholder.jpg);
+height:400px;
+border:0px solid white;
+}
+
+.birdies1{
+position:absolute;
+
+}
+
+.birdies2{
+position:absolute;
+left:65px;
+
+}
+
+.duck{
+position:absolute;
+width:175px;
+position:relative;
+top:250px;
+left:850px;
+}
+
+
+.scroller{
+background-color:#06265c}
+.underwatertext{ 
+background-color: black;
+color:white;
+margin: 0px;
+border:0px;
+
+}
+
+.textscroll{
+background:linear-gradient(transparent,#194cb8);
+
+}
+
+.body{
+position:relative;
+background: linear-gradient(#194cb8,#142075 13%,#10113e 20%, #0f0f35 50%,#10113e 70%, #142075 87%,#194cb8);
+border:1px transparent solid;
+
+}
+
+
+.footer {
+background-image:url(wemage/ocean_placeholder_flip.jpg);
+height:400px;
+margin:0px;
+border:0px;
+}
+
+.reach_me {
+
+position:relative;
+top:20px;
+left:10px;
+font-size:20px;
+border:2px white solid;
+margin:0px;
+line-height:0.1 ;
+
+}
+
