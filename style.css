@@ -1,14 +1,13 @@
 body{
 background:blue;
-margin:0px; 
-
+margin:0px;
 }
 
 
 .header {
 background-image: url(wemage/ocean_placeholder.jpg);
 height:400px;
-border:0px solid white;
+margin:0px;
 }
 
 .birdies1{
@@ -25,8 +24,8 @@ left:65px;
 .time{
 color:white;
 position:absolute;
-top: 20 px;
-right:0px;
+top: 5%;
+right:5%;
 font-family:sans-serif;
 font-weight:20;
 font-size:20px;
@@ -34,10 +33,10 @@ filter:invert(100%)
 }
 
 .duck{
-position:relative;
-width:175px;
+position:absolute;
+
 top:250px;
-left:850px;
+right:20%;
 
 }
 
