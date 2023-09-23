@@ -20,6 +20,7 @@ position:absolute;
 position:absolute;
 left:65px;
 
+
 }
 
 .time{
@@ -69,7 +70,7 @@ color: white;
 background-image:url(wemage/ocean_placeholder_flip.jpg);
 height:400px;
 margin:0px;
-border:0px;
+border:1px solid white;
 }
 
 .reach_me {
@@ -81,6 +82,9 @@ font-size:20px;
 border:2px white solid;
 margin:0px;
 line-height:0.1 ;
+color:white;
+height:100px;
+width:50%
 
 }
 
