@@ -1,0 +1,289 @@
+<DOCTYPE html>
+    <html lang ="en">
+       <head>
+         <title>
+           electronics speed notes
+         </title>
+
+<meta charset="UTF-8">
+
+<meta name="description" content="notes">
+
+<meta name="author" content="karthik">
+
+<meta http-equiv="refresh" content="1800">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        </head>
+<body>
+
+<pre>
+
+I. Components
+    A. Resistors and capacitors standard values
+    B. Component symbols
+    C. Frequency response, bode plots, basics review
+II. Diodes
+    A. Diodes, diode equation
+    B. Graphical/Load line analysis
+    C. Diode models
+        a. Ideal
+        b. Piecewise linear
+        c. AC
+        d. Other diode types
+    D. Zener diodes
+    E. Diode applications
+        a. Peak sample, power rectifier, clamps, regulator
+III. Bipolar transistors
+    A. Definitions
+    B. V-I characteristics, breakdown
+    C. Common-emitter large signal model, graphical analysis
+    D. Common-collector
+    E. Common-emitter
+    F. Applications: current source, DC power supply regulator
+IV. Bipolar transistors
+    A. Transistor biasing
+    B. Hybrid-pi equivalent circuit
+    C. High-frequency hybrid-pi
+    D. H-parameters
+    E. Common-emitter amplifier
+    F. AC load line
+    G. Common-collector (emitter-follower) amplifier
+V. Junction field-effect transistors
+    A. Operation
+    B. Background and V-I characteristics: JFET
+    C. FET switch, chopper, MUX
+    D. Low frequency incremental model
+    E. Biasing
+    F. JFET current source
+VI. Two-transistor amplifiers
+    A. Differential emitter-coupled pair
+        a. Current mirror
+    B. Complementary emitter-follower (Class B, AB)
+    C. Amplifier classes
+    D. Power amplifiers
+VII. Operational amplifiers
+    A. Overview
+    B. Basic linear op-amp circuits
+        a. Inverting, non-inverting, addition, subtraction
+        b. AC amplifiers, inverting, and non-inverting
+        c. Cascading; Ideal impedances
+        d. I-V conv, V-I conv, difference amp, instrument amp
+    C. Integrator, differentiator
+    D. Lossy integrator
+    E. Negative feedback
+VIII. Operational amplifiers
+    A. Limitations
+        a. Effect of finite open-loop gain
+        b. Differential and common mode input voltage limits
+        c. Common-mode rejection ration
+        d. Input resistance
+        e. Input bias current, input offset current
+        f. Non-zero output resistance
+        g. Frequency response, gain-bandwidth product
+        h. Output voltage swing, saturation
+        i. Output current limit
+        j. Compensation
+        k. Slew rate
+        l. Offset voltage and drift
+        m. Op-amp selection considerations
+IX. Operational amplifiers
+    A. Non-linear op-amp circuits
+        a. Precision ½ wave rectifier, log and antilog amps
+        b. Comparator
+        c. Schmitt-trigger
+        d. Schmitt-trigger oscillator [astable multivibrator]
+        e. 555 IC timer
+X. Practical matters
+    A. Physical layout; intercircuit coupling
+    B. Vcc, Vee bypassing
+        a. Capacitors and resistors at very high frequencies
+    C. Interference and shielding
+    D. Grounding and ground sequencing
+    E. Optoelectronic isolators
+Course Info 
+
+
+Voltage – EMF – potential difference
+	voltage b/w two points is work done in carrying 1 unit of positive charge from lower potential to higher potential
+	units – V  ( 6x1018 electrons)
+Energy 	
+	A joule of work is done in moving a Coloumb of charge thriugh a potential difference of 1V
+	 units – J  ( J =  C x V ) (Coloumb x Volt);
+Current
+	rate of flow of electrons
+	units – A (A = C/t)
+current flows through things and voltages are applied across things
+
+Rules per say 
+1. Sum of the currents into a point  = Sum of the currents ou tof the point . (Kirchoff’s Current Law)
+	also refered as node.
+2. Things in paralled have same voltage across them (KV L)
+3. P = V I  units W = J/s
+
+Relationship b/w Voltage & Current
+Resistors  - I proportional to V
+Capacitors – I proportinal to rate of change of V
+Diodes – I flows in only one direction
+Thermistors – Temperature dependent resitor
+Photoresistor – Light dependent resistor
+Strain gauges – Strain-dependent resistor
+3 terminal devides 
+Transitors – current flow b/w two terminals is controlled by voltage at the third terminal
+
+
+Resistor
+Resistors are lso characterised by how much power they can safely dissipate, thier physical size, adn others such as tolerence, temperature coefficient, noise, voltage coefficient, stability with time, inductance, etc.
+units Ohm R = V/I  
+
+in amplifiers as loads for active deviecs, in bias networks, and as feedback elements.
+W/ capacitors they establish time and act as filters.
+To set operating currents adn signal levels
+to reduce voltafe by dissipating power.
+To measure currents
+to discharge capacitors
+precision circuits to establish current
+to provide accurate voltage ratios 
+to set precise gain values
+in logic they act as bus and line terminators 
+and as pull-up and pull down resistors
+in high volatge circuits to measure voltages and equalize leakage currents and on and on
+
+Resistors in series and parallel
+In series : 
+R = R1+R2   -> bigger than u begun with
+In parallel:
+1/R = 1/R1 +1/R2  -> smaller than u begun with
+
+Exersice 1.1
+5k and 10k
+(a) in series 15k, (b)in parallel 10/3 k 
+Exersice 1.2
+Power = V2 / R = 144 J
+Exersice 1.3
+series current through R1 = R2
+ =>  I1 = I2  = I
+ V1/R1 = V2/R2 = V/R
+V1 = V*R1/R
+V2 = V* R2/R
+V = V1+V2
+V = V * (R1+R2)/R
+R = R1 +R2
+
+Exersice 1.4
+all resistors have same voltage difference across them 
+V= I1 R1 =I2 R2 =I3R3 =.....
+I1 = V1/R1 
+I2 = V2/R2
+etc
+I = I1+I2 +I3......
+V/R = V/R1 +V/R2 +V/R3...
+1/R =1/R1 +1/ R2.........
+
+ Conductance G 
+G= 1/R   reverse flash of resisters
+units  Siemens /mho  (S = 1/ohm)
+
+Exercise 1.5
+for resistance 1k power dissipated at 15v 	= 15*15/1000 W
+						= 0.225 W
+and p = V2/R there fore any incfrease in resistance would only decreae power. 
+
+Exercise 1.6
+10^10 watts  at 115v  
+ny resistance = >10,000,000 * 1000 watts = 115*115/ R
+		R = 10000000000/13225 
+resistance of new wire = 0.05 * 10^(-6) ohm /foot
+current I = 10000000000/115
+(a) power lost per foot =  I^2 R
+			= (10^20 /13225 ) * 5*10^(-8)
+			= 10^12 / 2685
+			=~ 3.8ish * 10^ 8 w/foot
+(b) 10^10 = 13235/ 5*feet  * 10^8
+      feet     = 26.85 feet
+Exercise 1.6. Optional exercise: New York City requires about
+1010 watts of electrical power, at 115 volts12 (this is plausible:
+10 million people averaging 1 kilowatt each). A heavy power ca-
+ble might be an inch in diameter. Let’s calculate what will happen
+if we try to supply the power through a cable 1 foot in diameter
+made of pure copper. Its resistance is 0.05 μ Ω (5×10−8 ohms)
+per foot. Calculate (a) the power lost per foot from “I 2 R losses,”
+(b) the length of cable over which you will lose all 1010 watts, and
+(c) how hot the cable will get, if you know the physics involved
+(σ = 6 × 10−12 W/K4 cm2 ). If you have done your computations
+correctly, the result should seem preposterous. What is the solu-
+tion to this puzzle?
+
+
+
+
+
+
+Input and output
+every electrical cricuit take input (voltage) to giv output (voltage)
+Transfer function H = out/ in 
+
+
+Voltage Dividers
+   I = Vin/(R1+R2)
+    Vout = I R2
+
+  
+
+
+
+Vin is generally on left and Vout  is generally on right 
+=> signals flow form left to right
+
+
+Voltage sources and current sources
+ideal voltage sources will not change ot put volatge for any amonut of load 
+V =I R. But
+real ones have a limit to the voltage they can provide output voltage compliance 
+in addition they dont provide absolute constant current either.
+
+A voltage source likes open circuit load and hates short circuit
+A current source hates open circuit load and likes short circuit.
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+Thevenin equivalent circuit
+Thévenin’s theorem states12 that any two-terminal network
+of resistors and voltage sources is equivalent to a single resistor R in series with a single voltage source V.
+
+
+
+Similarly, 
+Nortons theorem 
+can produce same results with single curent source and resister in parallel.
+Attaching a load whose resistance is less than or even comparable to the internal resistance will reduce the output considerably. This undesirable reduction of the open-circuit voltage (or signal) by the load is called “circuit loading.”
+
+Lest this example leave the wrong impression, we would like to emphasize again that circuits are ordinarily designed so that the load resistance is much greater than the source resistance of the signal that drives the load.
+
+Small signal resitance
+in electronic devices where I is not proportianl to V.
+
+it is sometimes useful to know instead the slope of the V –I curve, in other words, the ratio of a small change in applied voltage to the resulting change in current through the device, ΔV /ΔI (or dV/dI).
+units (ohms) and substitutes for resistance in many calculations
+it is called  small signal resistance, incremental resistance or dynamic resitance.
+
+Zener Diodes
+
+
+
+
+</pre>
+
+
+</body>
