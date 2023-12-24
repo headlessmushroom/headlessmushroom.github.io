@@ -92,8 +92,9 @@ width:50%;
 
 .nevergonnagiveyouup {
 
-    align: center;
-
+    position: absoluteq;
+    left: 50%;
+    
 border:10px pink solid;
 
 
