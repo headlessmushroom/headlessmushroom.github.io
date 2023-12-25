@@ -19,7 +19,8 @@ body{
 .popup{
     background-color: #ffffff;
     width: 100%;
-    padding: 30px 40px;
+    height: 200%;
+   /* padding: 30px 40px;  */
     position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
@@ -28,13 +29,14 @@ body{
     font-family: "Poppins",sans-serif;
     display: none;
     text-align: center;
+    z-index: 1;
 }
 .popup button{
     display: block;
     margin:  0 0 20px auto;
     background-color: transparent;
     font-size: 30px;
-    color: #c5c5c5;
+    color: #ff00a2;
     border: none;
     outline: none;
     cursor: pointer;
@@ -55,4 +57,11 @@ a{
     color: #ffffff;
     text-decoration: none;
     padding: 5px 0;
+}
+
+.meme {
+
+position: relative;
+/*transform: translate();*/
+z-index: 0;
 }
